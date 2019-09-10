@@ -1,0 +1,1 @@
+{"version":3,"sources":[],"names":[],"mappings":"","file":"","sourceRoot":"../../../../../../assets/Scripts/src/behavior","sourcesContent":["export interface BaseNodeData {\n    children?: any[];\n    child?: any;\n    category?:any, \n    name:string, \n    title?:string, \n    description?:any, \n    properties?:any,\n    id?:string,\n    parameters?:any\n  }\n"]}

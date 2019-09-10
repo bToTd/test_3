@@ -1,0 +1,66 @@
+[
+  {
+    "language": "cn",
+    "fonts": [
+      {
+        "name": "font_1",
+        "uuid": "b23ea7ad-47d4-487d-8a31-cee780fae4fe"
+      }
+    ],
+      "fontSizeItems": [
+        {
+          "num": 34
+        },
+        {
+          "num": 30
+        },
+        {
+          "num": 28
+        },
+        {
+          "num": 26
+        },
+        {
+          "num": 22
+        },
+        {
+          "num": 20
+        },
+        {
+          "num": 18
+        }
+      ]
+  },
+  {
+    "language": "en",
+    "fonts": [
+      {
+        "name": "font_4",
+        "uuid": "853338b0-8bfb-46c8-84ee-7dc200865693"
+      }
+    ],
+    "fontSizeItems": [
+      {
+        "num": 34
+      },
+      {
+        "num": 30
+      },
+      {
+        "num": 28
+      },
+      {
+        "num": 26
+      },
+      {
+        "num": 22
+      },
+      {
+        "num": 20
+      },
+      {
+        "num": 18
+      }
+    ]
+  }
+]

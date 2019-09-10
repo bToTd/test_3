@@ -1,0 +1,119 @@
+2019-09-10T03:43:34.628Z - normal: Load ~/.CocosCreator/settings.json
+2019-09-10T03:43:34.749Z - normal: Initializing Asset Database
+2019-09-10T03:43:34.754Z - normal: checking language setting...
+2019-09-10T03:43:34.754Z - normal: Language: zh
+2019-09-10T03:43:35.956Z - success: preview server running at http://localhost:7456
+2019-09-10T03:43:36.024Z - success: protocol editor-framework registered
+2019-09-10T03:43:36.025Z - success: protocol app registered
+2019-09-10T03:43:36.025Z - success: protocol theme registered
+2019-09-10T03:43:36.025Z - success: protocol packages registered
+2019-09-10T03:43:36.025Z - success: protocol uuid registerred
+2019-09-10T03:43:36.026Z - success: protocol db registerred
+2019-09-10T03:43:36.026Z - success: protocol thumbnail registerred
+2019-09-10T03:43:36.026Z - success: protocol unpack registerred
+2019-09-10T03:43:36.026Z - success: protocol disable-commonjs registerred
+2019-09-10T03:43:36.154Z - normal: connected!
+2019-09-10T03:43:36.157Z - normal: Check project /Users/admin/leishen/raygame/3_test
+2019-09-10T03:43:36.159Z - normal: Initializing project /Users/admin/leishen/raygame/3_test
+2019-09-10T03:43:36.712Z - normal: Initializing Cocos2d
+2019-09-10T03:43:37.845Z - normal: Initializing engine extends
+2019-09-10T03:43:37.938Z - success: asset-db-debugger loaded
+2019-09-10T03:43:37.940Z - success: baidu-adapter loaded
+2019-09-10T03:43:37.941Z - success: color-picker loaded
+2019-09-10T03:43:38.087Z - success: fb-audience-network loaded
+2019-09-10T03:43:38.165Z - success: fb-live-stream loaded
+2019-09-10T03:43:38.170Z - success: google-play-instant loaded
+2019-09-10T03:43:38.178Z - success: huawei-runtime loaded
+2019-09-10T03:43:38.180Z - success: jsb-adapter loaded
+2019-09-10T03:43:38.187Z - success: oppo-runtime loaded
+2019-09-10T03:43:38.203Z - success: package-manager loaded
+2019-09-10T03:43:38.433Z - success: qqplay-adapter loaded
+2019-09-10T03:43:38.436Z - success: runtime-dev-tools loaded
+2019-09-10T03:43:38.454Z - success: sdkbox loaded
+2019-09-10T03:43:38.475Z - success: tester loaded
+2019-09-10T03:43:38.494Z - success: ui-grid loaded
+2019-09-10T03:43:38.512Z - success: ui-kit-preview-extra loaded
+2019-09-10T03:43:38.529Z - success: ui-kit-preview loaded
+2019-09-10T03:43:38.547Z - success: ui-kit loaded
+2019-09-10T03:43:38.563Z - success: ui-tree loaded
+2019-09-10T03:43:38.579Z - success: vivo-runtime loaded
+2019-09-10T03:43:38.580Z - success: weapp-adapter loaded
+2019-09-10T03:43:38.650Z - success: assets loaded
+2019-09-10T03:43:38.666Z - success: builder loaded
+2019-09-10T03:43:39.054Z - success: cocos-services loaded
+2019-09-10T03:43:39.070Z - success: console loaded
+2019-09-10T03:43:39.119Z - success: fb-instant-games loaded
+2019-09-10T03:43:39.123Z - success: google-instant-games loaded
+2019-09-10T03:43:39.143Z - success: hierarchy loaded
+2019-09-10T03:43:39.158Z - success: inspector loaded
+2019-09-10T03:43:39.159Z - success: keystore loaded
+2019-09-10T03:43:39.178Z - success: node-library loaded
+2019-09-10T03:43:39.180Z - success: package-asset loaded
+2019-09-10T03:43:39.182Z - success: preferences loaded
+2019-09-10T03:43:39.196Z - success: project-exporter loaded
+2019-09-10T03:43:39.213Z - success: project-importer loaded
+2019-09-10T03:43:39.228Z - success: project-settings loaded
+2019-09-10T03:43:39.280Z - success: scene loaded
+2019-09-10T03:43:39.283Z - success: simulator-debugger loaded
+2019-09-10T03:43:39.287Z - success: sprite-editor loaded
+2019-09-10T03:43:39.302Z - success: store loaded
+2019-09-10T03:43:39.321Z - success: timeline loaded
+2019-09-10T03:43:39.339Z - success: behaviortree-editor loaded
+2019-09-10T03:43:39.368Z - success: @rjoygame_ccc/font-manager loaded
+2019-09-10T03:43:39.388Z - success: fsm-editor loaded
+2019-09-10T03:43:39.391Z - failed: Failed to load package at /Users/admin/leishen/raygame/3_test/packages/listend: Failed to load main.js: /Users/admin/leishen/raygame/3_test/packages/listend/main.js:43
+};
+^
+SyntaxError: Unexpected token }
+    at createScript (vm.js:53:10)
+    at Object.runInThisContext (vm.js:95:10)
+    at Module._compile (module.js:543:28)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at r.series.r (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/main/package.js:1:2037)
+2019-09-10T03:43:39.409Z - success: processon-statemachine loaded
+2019-09-10T03:43:41.063Z - info: Cocos Services load base data!
+2019-09-10T03:43:42.082Z - normal: Loading packages
+2019-09-10T03:43:42.091Z - failed: Failed to load package at /Users/admin/leishen/raygame/3_test/packages/listend: Failed to load main.js: /Users/admin/leishen/raygame/3_test/packages/listend/main.js:43
+};
+^
+SyntaxError: Unexpected token }
+    at createScript (vm.js:53:10)
+    at Object.runInThisContext (vm.js:95:10)
+    at Module._compile (module.js:543:28)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at r.series.r (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/main/package.js:1:2037)
+2019-09-10T03:43:42.091Z - normal: Watching packages
+2019-09-10T03:43:42.309Z - normal: Run Application
+2019-09-10T03:44:32.056Z - error: TypeError: behavior_1.BehaviorTree is not a constructor
+    at new TestBehavi (/Users/admin/leishen/raygame/3_test/temp/quick-scripts/assets/Scripts/test/testBehavi.js:25:28)
+    at cc_Node.addComponent (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/utils/base-node.js:481:33)
+    at Object.addComponent (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/scene.js:1:6218)
+    at HTMLElement.add-component (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/messages/scene-operation.js:1:1166)
+    at Object.e._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1941)
+    at EventEmitter.o.on.s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-09-10T03:44:40.482Z - error: TypeError: behavior_1.BehaviorTree is not a constructor
+    at new TestBehavi (/Users/admin/leishen/raygame/3_test/temp/quick-scripts/assets/Scripts/test/testBehavi.js:25:28)
+    at cc_Node.addComponent (/Applications/CocosCreator.app/Contents/Resources/engine/bin/.cache/dev/cocos2d/core/utils/base-node.js:481:33)
+    at Object.addComponent (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/page/scene-utils/utils/scene.js:1:6218)
+    at HTMLElement.add-component (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/scene/panel/messages/scene-operation.js:1:1166)
+    at Object.e._dispatch (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/panel.js:1:1941)
+    at EventEmitter.o.on.s (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-09-10T03:47:45.206Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:3682
+2019-09-10T03:49:28.296Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:4719
+2019-09-10T03:52:07.883Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Scripts/src/behavior/constants.ts.meta
+2019-09-10T03:52:17.627Z - error: SyntaxError: Unexpected token export
+2019-09-10T03:54:38.199Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/Scripts/src/behavior/constants.js.meta

@@ -1,0 +1,64 @@
+<div style="height: 100%">
+<ui-box-container style="height: 90%" >
+    <!-- 语言和字体大小都要按照语言来配置 -->
+    <ui-section>
+        <div class="header">字体和字号</div>
+        <div class="layout horizontal">
+            <div class="flex-3"> 语言 
+                <ui-input placeholder="语言的 key 值" v-value="lan"> </ui-input>
+            </div>
+            <ui-button class="green style-scope tiny flex-1" placeholder="添加的语言" @click="add_language(lan)"> 添加语言 </ui-button>
+        </div>
+        <ui-section class="i18n" v-for="(i18n_index, language) in i18n" track-by="$index">
+            <ui-drop-area class="header layout horizontal " class='btnbox'>
+                <div class="flex-3">{{language.language}}</div>
+                <ui-button class="red tiny flex-1" @click="delete_language(i18n_index)">delete</ui-button>
+            </ui-drop-area>
+            <!-- 字体 -->
+            <ui-section class="i18n">
+                <ui-drop-area class="header" >
+                    <div class="flex-3">字体</div>
+                    <ui-button class="green tiny flex-1" @click="add_i18n_font(i18n_index)">add font</ui-button>
+                </ui-drop-area>
+                <ui-drop-area v-for="(font_index, fontItem) in language.fonts" droppable="file" class="layout horizontal justified" style="padding-top:20px">
+                    <div class="flex-2" class="self-center" >{{fontItem.name}}</div>
+                    <ui-asset class="flex-4" droppable="asset" v-value="fontItem.uuid" ></ui-asset>
+                    <ui-button class="red mini flex-1" @click="delete_font(i18n_index, font_index)"> del </ui-button> 
+                </ui-drop-area>
+            </ui-section>
+            
+            <!-- 字号大小 -->
+            <ui-section class="i18n">
+                <div class="header">字体大小</div>
+                <div class="layout horizontal justified" class='btnbox'>
+                    <ui-button class="green tiny" @click="append(i18n_index)">add Size</ui-button>
+                    <ui-button class="red tiny" @click="delete_all">Del All</ui-button>
+                </div>
+                <ui-drop-area v-for="(size_index, fontSizeItem) in language.fontSizeItems" droppable="file" class="layout horizontal justified" style="padding-top:20px">
+                    <div class="flex-1" class="self-center" >{{size_index + 1}}</div>
+                    <ui-num-input class="flex-3" placeholder="Search..." v-value="fontSizeItem.num"></ui-num-input> 
+                    <ui-button class="red tiny flex-1" @click="delete_size(i18n_index, size_index)">del</ui-button>
+                </ui-drop-area> 
+            </ui-section>
+        </ui-section>
+    </ui-section>
+    <!-- 配置颜色区域 -->
+    <ui-section>
+        <div class="header">颜色</div>
+        <div class="layout horizontal justified" class='btnbox'>
+            <ui-button class="green tiny" @click="add_color">add color</ui-button>
+            <ui-button class="red tiny " @click="delete_all_color">del All</ui-button>
+        </div>
+        <ui-drop-area v-for="(index, item) in items" droppable="file" class="layout horizontal justified" style="padding-top:5px" >
+            <div class="flex-1">{{index + 1}}</div>
+            <ui-input placeholder="color name" class="flex-2" v-value="item.name"></ui-input>
+            <ui-color class="flex-3" v-value="item.color"></ui-color>
+            <ui-button class="red tiny flex-1" @click="delete_color(index)">del</ui-button>
+        </ui-drop-area>
+    </ui-section>
+</ui-box-container>
+<div class="layout horizontal around-justified btnbox">
+    <ui-button @click="save">Save</ui-button>
+    <ui-button @click="onRefresh">生成配置文件</ui-button>
+</div>
+</div>

@@ -1,0 +1,15 @@
+<ui-box-container style="height: 90%">
+    <div class="layout horizontal justified" class='btnbox'>
+        <ui-button class="green" @click="append">add Size</ui-button>
+        <ui-button class="red" @click="delete_all">Del All</ui-button>
+    </div>
+        <ui-drop-area v-for="(size_index, fontSizeItem) in fontSizeItems" droppable="file" class="layout horizontal justified" style="padding-top:20px">
+            <div class="flex-1" class="self-center" >{{size_index + 1}}</div>
+            <ui-num-input class="flex-3" placeholder="Search..." v-value="fontSizeItem.num"></ui-num-input> 
+            <ui-button class="red tiny flex-1" @click="delete_size(size_index)">del</ui-button>
+        </ui-drop-area> 
+</ui-box-container>
+<div class="layout horizontal around-justified btnbox">
+    <ui-button @click="save">Save</ui-button>
+    <ui-button @click="onRefresh">生成配置文件</ui-button>
+</div>

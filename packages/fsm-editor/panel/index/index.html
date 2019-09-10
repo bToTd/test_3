@@ -1,0 +1,13 @@
+<h2>fsm-editor</h2>
+<hr />
+<div>State: <span @click="changeLabelValue" v-value="label">{{label}}</span></div>
+<hr />
+<ui-button @click="send2Main">Send To Main</ui-button>
+
+<div id="myDiagramDiv" class="state"></div>
+<!-- 测试 canvas 是否能用 -->
+<!-- <div>
+<canvas id="canvas" class="box">
+    不支持 canvas 
+</canvas>
+</div> -->

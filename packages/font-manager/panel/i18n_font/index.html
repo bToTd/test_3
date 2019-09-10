@@ -1,0 +1,29 @@
+<div class="layout vertical" style="height: 100%">
+    <ui-box-container>
+        <ui-drop-area class="layout horizontal justified">
+            <div > 语言 
+            <ui-input placeholder="语言的 key 值" v-value="lan"> </ui-input>
+            </div>
+            <ui-button class="green style-scope tiny" placeholder="添加的语言" @confirm="add_language(lan)"> 添加语言 </ui-button>
+        </ui-drop-area>
+    </ui-box-container>
+    <ui-box-container style="height: 90%" >
+        <ui-section v-for="(i18n_index, language) in i18n">
+            <ui-drop class="header layout horizontal " class='btnbox'>
+                <div class="flex-2">{{language.language}}</div>
+                <ui-button class="green tiny flex-1" @click="add_i18n_font(i18n_index)">add font</ui-button>
+                <ui-button class="red tiny flex-1" @click="delete_language(i18n_index)">delete</ui-button>
+            </ui-drop>
+            <ui-drop-area v-for="(font_index, fontItem) in language.fonts" droppable="file" class="layout horizontal justified" style="padding-top:20px">
+                <div class="flex-2" class="self-center" >{{fontItem.name}}</div>
+                <ui-asset class="flex-4" droppable="asset" v-value="fontItem.uuid" ></ui-asset>
+                <ui-button class="red mini flex-1" @click="delete_font(i18n_index, font_index)"> del </ui-button> 
+            </ui-drop-area> 
+        </ui-section>
+    </ui-box-container>
+
+    <div class="layout horizontal around-justified btnbox">
+        <ui-button @click="save">Save</ui-button>
+        <ui-button @click="onRefresh">生成配置文件</ui-button>
+    </div>
+</div>

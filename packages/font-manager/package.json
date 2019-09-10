@@ -1,0 +1,94 @@
+{
+  "_from": "font-manager",
+  "_id": "font-manager@0.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-GVPwhWUQDSrqlz8UfXfP/ziBRVVe2WcESofHDEhYgRXSC/mDOS6NwV1UnaCtYufiDwUFhFAlvtJJJpcb/o/maA==",
+  "_location": "/font-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "font-manager",
+    "name": "font-manager",
+    "escapedName": "font-manager",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://127.0.0.1:4873/font-manager/-/font-manager-0.1.2.tgz",
+  "_shasum": "99fb5d7397b1443e06738a55979386a0bb963b42",
+  "_spec": "font-manager",
+  "_where": "/Users/admin/leishen/raygame/4_test",
+  "author": {
+    "name": "hwc",
+    "email": "wenchuan.huang@rjoygame.com"
+  },
+  "bundleDependencies": [],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "字体管理插件",
+  "engines": {},
+  "main": "main.js",
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/font-manager/open": {
+      "message": "@rjoygame_ccc/font-manager:open"
+    },
+    "i18n:MAIN_MENU.package.title/font-manager/color": {
+      "message": "font-manager:color"
+    },
+    "i18n:MAIN_MENU.package.title/font-manager/font": {
+      "message": "font-manager:font"
+    },
+    "i18n:MAIN_MENU.package.title/font-manager/size": {
+      "message": "font-manager:size"
+    }
+  },
+  "name": "@rjoygame_ccc/font-manager",
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "font-manager",
+    "width": 300,
+    "height": 650,
+    "min-height": 630,
+    "min-width": 270
+  },
+  "panel.colors_index": {
+    "main": "panel/colors_index.js",
+    "type": "dockable",
+    "title": "Color",
+    "width": 300,
+    "height": 650,
+    "min-height": 630,
+    "min-width": 250
+  },
+  "panel.font_index": {
+    "main": "panel/font_index.js",
+    "type": "dockable",
+    "title": "Font",
+    "width": 300,
+    "height": 650,
+    "min-height": 630,
+    "min-width": 260
+  },
+  "panel.size_index": {
+    "main": "panel/size_index.js",
+    "type": "dockable",
+    "title": "Size",
+    "width": 200,
+    "height": 650,
+    "min-height": 630,
+    "min-width": 200
+  },
+  "reload": {
+    "ignore": [
+      "config/**/*",
+      "src/**/*"
+    ]
+  },
+  "version": "0.1.2"
+}
