@@ -1,5 +1,6 @@
 import Action from "../core/Action";
-import { BaseNodeData, SUCCESS } from "../constants";
+import { SUCCESS } from "../constants";
+import { BaseNodeData } from "../interf";
 
 
 export default class Boarding extends Action {

@@ -7,6 +7,7 @@ var behavior_1 = require("../src/behavior");
 var testB3Data_1 = require("../config/testB3Data");
 var B3Data = require("../config/B3DataGotoSchool");
 var AwardData = require("../config/awardTree");
+var GOLOBAL = require("../src/behavior/constants");
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -28,6 +29,7 @@ var TestBehavi = /** @class */ (function (_super) {
     }
     TestBehavi.prototype.onLoad = function () {
         console.log("测试开始");
+        console.log(GOLOBAL.COMPOSITE);
         this.gotoschool = new behavior_1.BehaviorTree();
         this.tre = new behavior_1.BehaviorTree();
         this.blackboard = new behavior_1.Blackboard();
@@ -55,6 +57,7 @@ var TestBehavi = /** @class */ (function (_super) {
     };
     TestBehavi.prototype.addAward = function () {
         this.award += 5;
+        console.log("\u5F53\u524D\u79EF\u5206\u4E3A " + this.award);
     };
     TestBehavi = __decorate([
         ccclass

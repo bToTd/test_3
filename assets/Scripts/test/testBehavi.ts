@@ -2,6 +2,7 @@ import { BehaviorTree, Blackboard } from "../src/behavior";
 import { data } from "../config/testB3Data";
 import * as B3Data from "../config/B3DataGotoSchool";
 import * as AwardData from "../config/awardTree";
+import * as GOLOBAL from "../src/behavior/constants";
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -28,6 +29,7 @@ export default class TestBehavi extends cc.Component {
 
     onLoad () {
         console.log("测试开始");
+        console.log(GOLOBAL.COMPOSITE);
         this.gotoschool = new BehaviorTree();
         this.tre = new BehaviorTree();
         this.blackboard = new Blackboard();
@@ -60,6 +62,7 @@ export default class TestBehavi extends cc.Component {
 
     addAward () {
         this.award += 5;
+        console.log(`当前积分为 ${this.award}`);
     }
     
 

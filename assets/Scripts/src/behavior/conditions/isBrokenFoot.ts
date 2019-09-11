@@ -1,6 +1,6 @@
 import Condition from "../core/Condition";
-import { FAILURE, SUCCESS } from "../constants";
 import { BaseNodeData } from "../interf";
+import { FAILURE, SUCCESS } from "../constants";
 
 
 export default class isBrokenFoot extends Condition{

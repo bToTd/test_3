@@ -3,7 +3,7 @@ cc._RF.push(module, '0340d26r7pGVaymz9eAsO7F', 'hasSchoolBus', __filename);
 // Scripts/src/behavior/conditions/hasSchoolBus.ts
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var __1 = require("..");
+var Condition_1 = require("../core/Condition");
 var constants_1 = require("../constants");
 var hasSchoolBus = /** @class */ (function (_super) {
     __extends(hasSchoolBus, _super);
@@ -26,7 +26,7 @@ var hasSchoolBus = /** @class */ (function (_super) {
         }
     };
     return hasSchoolBus;
-}(__1.Condition));
+}(Condition_1.default));
 exports.default = hasSchoolBus;
 
 cc._RF.pop();

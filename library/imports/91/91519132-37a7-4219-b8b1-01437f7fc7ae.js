@@ -98,6 +98,15 @@ Object.defineProperty(exports, 'Receive', {
   }
 });
 
+var _Move = require('./Move');
+
+Object.defineProperty(exports, 'Move', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Move).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 cc._RF.pop();

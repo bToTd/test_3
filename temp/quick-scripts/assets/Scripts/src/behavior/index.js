@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/src/behavior/index.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, '85a700iIN5CNq6+hIZNpPPD', 'index', __filename);
+cc._RF.push(module, 'dab7b2yUOJL44dJwc5e9tRF', 'index', __filename);
 // Scripts/src/behavior/index.ts
 
 function __export(m) {

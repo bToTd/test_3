@@ -1,6 +1,5 @@
 import Composite from '../core/Composite';
 import {SUCCESS} from '../constants';
-import BaseNode from '../core/BaseNode';
 import { BaseNodeData } from '../interf';
 
 /**

@@ -17,7 +17,7 @@ var HasReceived = /** @class */ (function (_super) {
     }
     HasReceived.prototype.tick = function (tick) {
         if (tick.target.level >= this.properties.level) {
-            console.log("\u5DF2\u7ECF\u9886\u53D6\u4E86 " + this.properties.level + " \u7B49\u7EA7\u7684\u5956\u52B1");
+            console.log("\u5DF2\u7ECF\u9886\u53D6\u4E86 " + this.properties.level + " \u7B49\u7EA7\u7684\u5956\u52B1\uFF0C\u4E0D\u80FD\u518D\u9886\u53D6\u76F8\u540C\u7684\u5956\u52B1");
             return constants_1.SUCCESS;
         }
         else {

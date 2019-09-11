@@ -1,5 +1,4 @@
 import BaseNode from './BaseNode';
-import {COMPOSITE} from '../constants';
 import { BaseNodeData } from '../interf';
 
 /**

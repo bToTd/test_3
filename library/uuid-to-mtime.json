@@ -270,7 +270,7 @@
     "relativePath": "resources/sprite/en"
   },
   "bb4e4342-459f-428b-82b1-d168df3b39e6": {
-    "asset": 1568086988052,
+    "asset": 1568087372100,
     "meta": 1563779310275,
     "relativePath": "Scene"
   },
@@ -280,7 +280,7 @@
     "relativePath": "Scripts"
   },
   "32892918-dbec-4b90-926c-24a1fe9d7e51": {
-    "asset": 1568086748664,
+    "asset": 1568117652256,
     "meta": 1563779310276,
     "relativePath": "Scripts/config"
   },
@@ -305,7 +305,7 @@
     "relativePath": "textures"
   },
   "99b318ed-3d38-4c51-b3b7-1c84b9c849d3": {
-    "asset": 1567754780992,
+    "asset": 1568116296630,
     "meta": 1563940477500,
     "relativePath": "Scripts/test"
   },
@@ -415,7 +415,7 @@
     "relativePath": "Scripts/config/newState.ts"
   },
   "a55cc465-ebf2-4cae-814d-2cf9ab57a582": {
-    "asset": 1568019899761,
+    "asset": 1568087678272,
     "meta": 1567754494257,
     "relativePath": "Scripts/src/behavior"
   },
@@ -435,7 +435,7 @@
     "relativePath": "Scripts/src/behavior/_docs/constants.js"
   },
   "0f50e427-e4a1-4a66-b86a-54416320cf8c": {
-    "asset": 1568085406430,
+    "asset": 1568116205722,
     "meta": 1567754494260,
     "relativePath": "Scripts/src/behavior/actions"
   },
@@ -455,7 +455,7 @@
     "relativePath": "Scripts/src/behavior/actions/Wait.ts"
   },
   "1c4965d0-4b76-4102-8be8-b35d3a0ddb00": {
-    "asset": 1567756053136,
+    "asset": 1568116205723,
     "meta": 1567754494270,
     "relativePath": "Scripts/src/behavior/composites"
   },
@@ -483,16 +483,6 @@
     "asset": 1567756053138,
     "meta": 1567754494281,
     "relativePath": "Scripts/src/behavior/decorators"
-  },
-  "91519132-37a7-4219-b8b1-01437f7fc7ae": {
-    "asset": 1568085107840,
-    "meta": 1568085407146,
-    "relativePath": "Scripts/src/behavior/actions/index.js"
-  },
-  "fdf533c1-7dde-490c-9191-320acb87b5d8": {
-    "asset": 1567756019472,
-    "meta": 1567756053617,
-    "relativePath": "Scripts/src/behavior/composites/index.js"
   },
   "700c637d-dfc2-4d5a-8f7d-876e3729f3e9": {
     "asset": 1567756000123,
@@ -535,74 +525,14 @@
     "relativePath": "Scripts/config/B3DataGotoSchool.ts"
   },
   "e5582b30-c321-42be-8bbe-30f687bd962f": {
-    "asset": 1568085406439,
+    "asset": 1568116205726,
     "meta": 1568017050909,
     "relativePath": "Scripts/src/behavior/conditions"
-  },
-  "2450c617-c21c-4510-9d79-7dce474c7514": {
-    "asset": 1568081551005,
-    "meta": 1568085407350,
-    "relativePath": "Scripts/src/behavior/conditions/index.js"
-  },
-  "73f63d97-84a8-469f-aebf-3ae17764919b": {
-    "asset": 1568017647540,
-    "meta": 1568017699485,
-    "relativePath": "Scripts/src/behavior/actions/Boarding.ts"
-  },
-  "796ceebf-98c3-4574-a88e-14bda313f2af": {
-    "asset": 1568017668692,
-    "meta": 1568017699505,
-    "relativePath": "Scripts/src/behavior/actions/goToSchool.ts"
-  },
-  "29ee4926-4e59-4bdc-92d1-78f76be441be": {
-    "asset": 1568017695026,
-    "meta": 1568017699539,
-    "relativePath": "Scripts/src/behavior/actions/Sleep.ts"
-  },
-  "9a06e0ed-1477-43b9-9940-232b88813eac": {
-    "asset": 1568019681898,
-    "meta": 1568019900102,
-    "relativePath": "Scripts/src/behavior/composites/MemPriority.ts"
-  },
-  "7b7aec83-339f-4c61-9547-c043c003c9f0": {
-    "asset": 1568019705144,
-    "meta": 1568019900134,
-    "relativePath": "Scripts/src/behavior/composites/MemSequence.ts"
-  },
-  "0c1b0aa2-4a52-46d2-ab3b-36ad12384429": {
-    "asset": 1568019718769,
-    "meta": 1568019900182,
-    "relativePath": "Scripts/src/behavior/composites/Priority.ts"
-  },
-  "f05e771f-dc34-4f9d-b3d3-444eac1ae4e1": {
-    "asset": 1568019774526,
-    "meta": 1568019900209,
-    "relativePath": "Scripts/src/behavior/composites/Sequence.ts"
   },
   "fec38f43-68d5-4a9d-8f70-c964d1896743": {
     "asset": 1568019635381,
     "meta": 1568019900483,
     "relativePath": "Scripts/src/behavior/core/Action.ts"
-  },
-  "c7137081-3860-4655-90c2-ce2846f2bf0f": {
-    "asset": 1568019533080,
-    "meta": 1568019900509,
-    "relativePath": "Scripts/src/behavior/core/BehaviorTree.ts"
-  },
-  "2faa61d8-8a7b-48d6-bcf3-8b53cc4e75e8": {
-    "asset": 1568019615739,
-    "meta": 1568019900527,
-    "relativePath": "Scripts/src/behavior/core/Composite.ts"
-  },
-  "b19c18b9-001c-44f2-aa9b-366c437a8045": {
-    "asset": 1568019533939,
-    "meta": 1568019900539,
-    "relativePath": "Scripts/src/behavior/core/Condition.ts"
-  },
-  "0953a91a-3169-4f6b-b406-fef4504a34a9": {
-    "asset": 1568019531906,
-    "meta": 1568019900623,
-    "relativePath": "Scripts/src/behavior/core/Decorator.ts"
   },
   "0e00f319-21ed-4f45-a339-44ce02c6cedf": {
     "asset": 1568019835969,
@@ -629,26 +559,6 @@
     "meta": 1568019901067,
     "relativePath": "Scripts/src/behavior/interf.ts"
   },
-  "1f113047-2da4-40eb-ac81-5284093534e8": {
-    "asset": 1568020356881,
-    "meta": 1568020503812,
-    "relativePath": "Scripts/src/behavior/conditions/hasBicycle.ts"
-  },
-  "baac4ac3-f3c9-4664-a82c-236503f4909f": {
-    "asset": 1568020765342,
-    "meta": 1568020775253,
-    "relativePath": "Scripts/src/behavior/conditions/isBrokenFoot.ts"
-  },
-  "1939b0cd-e0d7-4b9d-93bf-21da0e56775e": {
-    "asset": 1568024300799,
-    "meta": 1568024347759,
-    "relativePath": "Scripts/src/behavior/core/BaseNode.ts"
-  },
-  "0340ddba-afba-4655-aca6-cfd780b0eec5": {
-    "asset": 1568024428402,
-    "meta": 1568024433070,
-    "relativePath": "Scripts/src/behavior/conditions/hasSchoolBus.ts"
-  },
   "aa0f25cf-6037-4c20-9477-3dac929cb792": {
     "asset": 1568084755035,
     "meta": 1568085407247,
@@ -659,35 +569,15 @@
     "meta": 1568085407295,
     "relativePath": "Scripts/src/behavior/conditions/CanReceive.ts"
   },
-  "d1f10231-1f3a-4119-bf8b-0c81ce679fed": {
-    "asset": 1568081382240,
-    "meta": 1568085407348,
-    "relativePath": "Scripts/src/behavior/conditions/HasReceived.ts"
-  },
   "6de026d0-0a11-4e44-b3d1-4d865dd88ee8": {
-    "asset": 1568089500688,
-    "meta": 1568089500705,
+    "asset": 1568167128462,
+    "meta": 1568167128479,
     "relativePath": "Scene/b3.fire"
-  },
-  "85a70d22-20de-4236-aebe-84864da4f3c3": {
-    "asset": 1568087674414,
-    "meta": 1568087678514,
-    "relativePath": "Scripts/src/behavior/index.ts"
-  },
-  "4b605fec-0f6a-4a02-a166-049ef25688d9": {
-    "asset": 1568087641247,
-    "meta": 1568087678515,
-    "relativePath": "Scripts/src/behavior/constants.ts"
   },
   "965493d3-0fe7-4f32-90f3-c422db0c8b89": {
     "asset": 1568087906337,
     "meta": 1568087910519,
     "relativePath": "Scripts/src/behavior/actions/NotAward.ts"
-  },
-  "869876a5-906f-4f4f-a0be-72cd215818a0": {
-    "asset": 1568089575460,
-    "meta": 1568089577866,
-    "relativePath": "Scripts/test/testBehavi.ts"
   },
   "8be5776c-5560-440c-bb8f-6e4a1b5c196b": {
     "asset": 1568098293375,
@@ -703,5 +593,145 @@
     "asset": 1568099239841,
     "meta": 1568099242144,
     "relativePath": "Scripts/config/awardTree.ts"
+  },
+  "91519132-37a7-4219-b8b1-01437f7fc7ae": {
+    "asset": 1568111247879,
+    "meta": 1568116206183,
+    "relativePath": "Scripts/src/behavior/actions/index.js"
+  },
+  "d1f10231-1f3a-4119-bf8b-0c81ce679fed": {
+    "asset": 1568108095292,
+    "meta": 1568116206241,
+    "relativePath": "Scripts/src/behavior/conditions/HasReceived.ts"
+  },
+  "67da86db-5926-4894-94e7-ed7bdea4143d": {
+    "asset": 1568110646779,
+    "meta": 1568116206360,
+    "relativePath": "Scripts/src/behavior/composites/RandomSelectors.ts"
+  },
+  "ff5008ff-0e13-40b2-833e-b623eefb10e7": {
+    "asset": 1568115594134,
+    "meta": 1568116206380,
+    "relativePath": "Scripts/src/behavior/conditions/GreaterThan.ts"
+  },
+  "f997c396-83db-42c9-97d6-a0dee81a7007": {
+    "asset": 1568116788235,
+    "meta": 1568117652562,
+    "relativePath": "Scripts/config/mvTree.ts"
+  },
+  "fdf533c1-7dde-490c-9191-320acb87b5d8": {
+    "asset": 1568118737666,
+    "meta": 1568118836564,
+    "relativePath": "Scripts/src/behavior/composites/index.js"
+  },
+  "21f6bb9f-b533-45a1-86c4-8a9182ebaba6": {
+    "asset": 1568119105112,
+    "meta": 1568119166258,
+    "relativePath": "Scripts/src/behavior/conditions/LessThan.ts"
+  },
+  "1f113047-2da4-40eb-ac81-5284093534e8": {
+    "asset": 1568119593818,
+    "meta": 1568119628026,
+    "relativePath": "Scripts/src/behavior/conditions/hasBicycle.ts"
+  },
+  "0340ddba-afba-4655-aca6-cfd780b0eec5": {
+    "asset": 1568119571107,
+    "meta": 1568119628354,
+    "relativePath": "Scripts/src/behavior/conditions/hasSchoolBus.ts"
+  },
+  "2450c617-c21c-4510-9d79-7dce474c7514": {
+    "asset": 1568119618467,
+    "meta": 1568119628401,
+    "relativePath": "Scripts/src/behavior/conditions/index.js"
+  },
+  "baac4ac3-f3c9-4664-a82c-236503f4909f": {
+    "asset": 1568119611122,
+    "meta": 1568119628402,
+    "relativePath": "Scripts/src/behavior/conditions/isBrokenFoot.ts"
+  },
+  "ba6cb600-21c3-4830-a7b4-8b40f95ca54d": {
+    "asset": 1568119913397,
+    "meta": 1568119927097,
+    "relativePath": "Scripts/test/nodeMove.ts"
+  },
+  "1939b0cd-e0d7-4b9d-93bf-21da0e56775e": {
+    "asset": 1568120294637,
+    "meta": 1568120370555,
+    "relativePath": "Scripts/src/behavior/core/BaseNode.ts"
+  },
+  "2faa61d8-8a7b-48d6-bcf3-8b53cc4e75e8": {
+    "asset": 1568120344913,
+    "meta": 1568120370576,
+    "relativePath": "Scripts/src/behavior/core/Composite.ts"
+  },
+  "b19c18b9-001c-44f2-aa9b-366c437a8045": {
+    "asset": 1568120329421,
+    "meta": 1568120370605,
+    "relativePath": "Scripts/src/behavior/core/Condition.ts"
+  },
+  "0953a91a-3169-4f6b-b406-fef4504a34a9": {
+    "asset": 1568120337376,
+    "meta": 1568120370606,
+    "relativePath": "Scripts/src/behavior/core/Decorator.ts"
+  },
+  "73f63d97-84a8-469f-aebf-3ae17764919b": {
+    "asset": 1568165462496,
+    "meta": 1568165581326,
+    "relativePath": "Scripts/src/behavior/actions/Boarding.ts"
+  },
+  "796ceebf-98c3-4574-a88e-14bda313f2af": {
+    "asset": 1568165483000,
+    "meta": 1568165581342,
+    "relativePath": "Scripts/src/behavior/actions/goToSchool.ts"
+  },
+  "29ee4926-4e59-4bdc-92d1-78f76be441be": {
+    "asset": 1568165503530,
+    "meta": 1568165581396,
+    "relativePath": "Scripts/src/behavior/actions/Sleep.ts"
+  },
+  "9a06e0ed-1477-43b9-9940-232b88813eac": {
+    "asset": 1568165544737,
+    "meta": 1568165581438,
+    "relativePath": "Scripts/src/behavior/composites/MemPriority.ts"
+  },
+  "7b7aec83-339f-4c61-9547-c043c003c9f0": {
+    "asset": 1568165537767,
+    "meta": 1568165581471,
+    "relativePath": "Scripts/src/behavior/composites/MemSequence.ts"
+  },
+  "0c1b0aa2-4a52-46d2-ab3b-36ad12384429": {
+    "asset": 1568165531447,
+    "meta": 1568165581497,
+    "relativePath": "Scripts/src/behavior/composites/Priority.ts"
+  },
+  "f05e771f-dc34-4f9d-b3d3-444eac1ae4e1": {
+    "asset": 1568165524018,
+    "meta": 1568165582010,
+    "relativePath": "Scripts/src/behavior/composites/Sequence.ts"
+  },
+  "c7137081-3860-4655-90c2-ce2846f2bf0f": {
+    "asset": 1568165640635,
+    "meta": 1568165648001,
+    "relativePath": "Scripts/src/behavior/core/BehaviorTree.ts"
+  },
+  "dab7bdb2-50e2-4be3-8749-c1ce5ef6d445": {
+    "asset": 1568165638814,
+    "meta": 1568165648002,
+    "relativePath": "Scripts/src/behavior/index.ts"
+  },
+  "869876a5-906f-4f4f-a0be-72cd215818a0": {
+    "asset": 1568166007444,
+    "meta": 1568166011959,
+    "relativePath": "Scripts/test/testBehavi.ts"
+  },
+  "cd5277c4-fdc5-4fc9-9c10-bc245a34d310": {
+    "asset": 1568165886696,
+    "meta": 1568166011960,
+    "relativePath": "Scripts/src/behavior/constants.ts"
+  },
+  "554a643e-a2d3-422e-a89e-839e95f919d6": {
+    "asset": 1568166986360,
+    "meta": 1568167095074,
+    "relativePath": "Scripts/src/behavior/actions/Move.ts"
   }
 }

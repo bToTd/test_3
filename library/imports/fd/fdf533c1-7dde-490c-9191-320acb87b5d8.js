@@ -44,6 +44,15 @@ Object.defineProperty(exports, 'Sequence', {
   }
 });
 
+var _RandomSelectors = require('./RandomSelectors');
+
+Object.defineProperty(exports, 'RandomSelectors', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_RandomSelectors).default;
+  }
+});
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 cc._RF.pop();

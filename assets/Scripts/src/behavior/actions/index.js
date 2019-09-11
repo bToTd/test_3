@@ -8,3 +8,4 @@ export {default as Boarding} from './Boarding';
 export {default as goToSchool} from './goToSchool';
 export {default as NotAward} from './NotAward';
 export {default as Receive} from './Receive';
+export {default as Move} from './Move';

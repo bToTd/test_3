@@ -1,5 +1,4 @@
 import BaseNode from './BaseNode';
-import {DECORATOR} from '../constants';
 import { BaseNodeData } from '../interf';
 
 /**

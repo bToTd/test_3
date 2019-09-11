@@ -1,4 +1,4 @@
-import { Condition } from "..";
+import Condition from "../core/Condition";
 import { FAILURE, SUCCESS } from "../constants";
 import { BaseNodeData } from "../interf";
 
