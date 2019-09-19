@@ -2,7 +2,9 @@ import Composite from "../core/Composite";
 import { BaseNodeData } from "../interf";
 import { SUCCESS, FAILURE } from "../constants";
 
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class RandomSelectors extends Composite {
     constructor (data:BaseNodeData) {
         data.name = 'RandomSelectors';

@@ -12,7 +12,9 @@ import { BaseNodeData } from '../interf';
  * @class RepeatUntilFailure
  * @extends Decorator
  **/
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class RepeatUntilFailure extends Decorator {
   public maxLoop: number;
 

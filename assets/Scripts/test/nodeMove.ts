@@ -1,5 +1,7 @@
 import { BehaviorTree, Blackboard } from "../src/behavior";
 import * as mvTreeData from "../config/mvTree";
+import * as GG from "../src/behavior/constants";
+import * as sb from "../src/behavior/conditions"
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -23,13 +25,17 @@ export default class nodeMove extends cc.Component {
     protected ticker: number = 0;
 
     onLoad(){
+        console.log(GG);
+        console.log(sb);
         this.mvTree = new BehaviorTree();
         this.blackboard = new Blackboard();
-        this.mvTree.load(mvTreeData.data, []);  
+        this.mvTree.load(mvTreeData.data, []);
     }
 
     start () {
-
+        // this.mvTree = new BehaviorTree();
+        // this.blackboard = new Blackboard();
+        // this.mvTree.load(mvTreeData.data, []);
     }
 
     update (dt) {

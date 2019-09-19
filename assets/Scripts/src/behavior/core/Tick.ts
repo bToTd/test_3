@@ -17,7 +17,9 @@ import BaseNode from "./BaseNode";
  * @module b3
  * @class Tick
  **/
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class Tick {
   public tree: any;
   public debug: any;

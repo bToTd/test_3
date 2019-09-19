@@ -11,7 +11,9 @@ import { BaseNodeData } from '../interf';
  * @class Sequence
  * @extends Composite
  **/
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class Sequence extends Composite {
 
   /**

@@ -20,7 +20,9 @@ import { BaseNodeData } from '../interf';
  * @class Action
  * @extends BaseNode
  **/
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class Action extends BaseNode {
   
   /**

@@ -12,7 +12,9 @@ import { BaseNodeData } from '../interf';
  * @class Repeater
  * @extends Decorator
  **/
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class Repeater extends Decorator {
   public maxLoop: number;
 

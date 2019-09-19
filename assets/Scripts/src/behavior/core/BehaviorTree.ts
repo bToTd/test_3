@@ -2,8 +2,8 @@ import { createUUID } from '../b3.functions';
 import { COMPOSITE, DECORATOR } from '../constants';
 import * as Decorators from '../decorators';
 import * as Composites from '../composites';
-import * as Actions from '../actions';
 import * as Conditions from '../conditions';
+import * as Actions from '../sbactions';
 import Tick from './Tick';
 import { BaseNodeData } from '../interf';
 
@@ -79,7 +79,9 @@ interface behaviorTreeData {
   nodes: any,
   custom_nodes: any
 }
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class BehaviorTree {
   id: string;
   title: string;

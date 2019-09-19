@@ -2,7 +2,9 @@ import Condition from "../core/Condition";
 import { SUCCESS, FAILURE } from "../constants";
 import { BaseNodeData } from "../interf";
 
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class hasBicycle extends Condition {
     constructor () {
         let data:BaseNodeData = {

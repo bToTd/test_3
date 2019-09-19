@@ -36,7 +36,9 @@
  * @module b3
  * @class Blackboard
  **/
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class Blackboard {
   private _baseMemory:any;
   private _treeMemory:any;

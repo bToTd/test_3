@@ -13,7 +13,9 @@ import { BaseNodeData } from '../interf';
  * @class MaxTime
  * @extends Decorator
  **/
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class MaxTime extends Decorator {
   public maxTime: any;
 

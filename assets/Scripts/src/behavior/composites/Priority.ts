@@ -11,7 +11,9 @@ import { BaseNodeData } from '../interf';
  * @class Priority
  * @extends Composite
  **/
+const {ccclass, property} = cc._decorator;
 
+@ccclass
 export default class Priority extends Composite {
 
   /**

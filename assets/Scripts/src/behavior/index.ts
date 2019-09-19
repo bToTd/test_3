@@ -1,11 +1,11 @@
 export * from './constants'
 import {createUUID} from './b3.functions';
 
-import Error from './actions/Error';
-import Failer from './actions/Failer';
-import Runner from './actions/Runner';
-import Succeeder from './actions/Succeeder';
-import Wait from './actions/Wait';
+import Error from './sbactions/Error';
+import Failer from './sbactions/Failer';
+import Runner from './sbactions/Runner';
+import Succeeder from './sbactions/Succeeder';
+import Wait from './sbactions/Wait';
 
 import MemPriority from './composites/MemPriority';
 import MemSequence from './composites/MemSequence';
