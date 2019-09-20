@@ -8,9 +8,7 @@ import { BaseNodeData } from '../interf';
  * @class Condition
  * @extends BaseNode
  **/
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class Condition extends BaseNode {
 
   /**

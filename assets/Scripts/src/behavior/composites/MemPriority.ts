@@ -12,9 +12,7 @@ import { BaseNodeData } from '../interf';
  * @class MemPriority
  * @extends Composite
  **/
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class MemPriority extends Composite {
 
   /**

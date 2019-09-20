@@ -15,3 +15,4 @@ export {default as StatuCode} from "./fight/StatuCode";
 export {default as FullEnergy} from "./newFight/FullEnergy";
 export {default as OutOfRange} from "./newFight/OutOfRange";
 export {default as TankStatus} from "./newFight/TankStatus";
+export {default as IsAlive} from "./newFight/IsAlive";

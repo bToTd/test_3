@@ -40,9 +40,7 @@ import { BaseNodeData } from '../interf';
  * @class Composite
  * @extends BaseNode
  **/
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class Composite extends BaseNode {
   public children: Array<BaseNode>;
 

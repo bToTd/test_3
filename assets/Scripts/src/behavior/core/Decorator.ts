@@ -40,9 +40,7 @@ import { BaseNodeData } from '../interf';
  * @class Decorator
  * @extends BaseNode
  **/
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class Decorator extends BaseNode {
   public child: BaseNode;
 

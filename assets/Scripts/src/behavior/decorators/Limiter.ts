@@ -12,9 +12,7 @@ import { BaseNodeData } from '../interf';
  * @class Limiter
  * @extends Decorator
  **/
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class Limiter extends Decorator {
   public maxLoop: any;
 

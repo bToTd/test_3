@@ -23,9 +23,7 @@ import { BaseNodeData } from '../interf';
  * @module b3
  * @class BaseNode
  **/
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class BaseNode {
   protected id:any;
   protected category:any;

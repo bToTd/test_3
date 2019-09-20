@@ -3,9 +3,12 @@ import { data } from "../config/testB3Data";
 import * as B3Data from "../config/B3DataGotoSchool";
 import * as AwardData from "../config/awardTree";
 import * as GOLOBAL from "../src/behavior/constants";
-import * as sb from "../src/behavior/sbactions";
 import { TankFight } from "../config/Tank/TankB3";
 import { Report } from "../config/Tank/TankReport";
+import { fight } from "../config/Tank/TankFightcfg";
+
+
+import * as sb from "../src/behavior/actions"
 
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
@@ -25,14 +28,16 @@ interface Tank {
     x: number,
     y: number,
     range: number,
-    target: Tank,
+    target?: Tank,
     energy: number,
     status:string,
+    HP: number,
+    alive:boolean,
 }
-
+const MAX = 6;
 const {ccclass, property} = cc._decorator;
 
-@ccclass
+@ccclass 
 export default class TestBehavi extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
@@ -44,15 +49,26 @@ export default class TestBehavi extends cc.Component {
     public level:number = 0;
 
     private isOpen: boolean = false;
-
     // 播放战报的行为树
     private TankB3: any;
+
+    // 战斗行为树
+    private fightTree: any;
+    private delayTime: any = 0;
+    private lastTime: any = 0;
+    private ticker: any  = 0;
+
+    private tanks_1:Array<Tank> = [];
+    private tanks_2:Array<Tank> = [];
+
+    private attackCount = 1;
+    private bruck: number = 0;
+    private red: number = 0;
 
     onLoad () {
         console.log("测试开始");
         console.log(GOLOBAL.COMPOSITE);
         console.log(sb);
-
         this.gotoschool = new BehaviorTree();
         this.tre = new BehaviorTree();
         this.blackboard = new Blackboard();
@@ -64,6 +80,11 @@ export default class TestBehavi extends cc.Component {
         // 播放战报的行为树
         this.TankB3 = new BehaviorTree();
         this.TankB3.load(TankFight, []);
+
+        // 初始化战斗行为树
+        this.fightTree = new BehaviorTree();
+        this.fightTree.load(fight, []);
+        this.initTanks();
     }
 
     start () {
@@ -105,9 +126,134 @@ export default class TestBehavi extends cc.Component {
             }
         }
     }
+
+    FightBtn(){
+        this.isOpen = !this.isOpen;
+    }
+
+    initTanks(){
+        for(let index = 0; index < MAX; index++){
+            let t:Tank = {
+                'name' : '蓝色_'+index.toString(),
+                'HP': 100,
+                'index' : index,
+                'tag' : index + 1,
+                'energy' : 0,
+                'range' : 700,
+                'status' : "alive",
+                'y' : (index % 3) * 100,
+                'x' : index < 3 ? 200 : 0,
+                'alive': true,
+            };
+            this.tanks_1.push(t);
+        }
+
+
+        for(let index = 0; index < MAX; index++){
+            let t:Tank = {
+                'name' : '红色_' + index.toString() + '_',
+                'HP' : 100,
+                'index' : index,
+                'tag' : index + 1,
+                'energy' : 0,
+                'range' : 700,
+                'status' : "alive",
+                'y' : (index % 3) * 100,
+                'x' : index < 3 ? 600 : 800,
+                'alive' : true,
+            };
+            this.tanks_2.push(t);
+        }
+    }
+
+    refreshTanks(){
+        this.tanks_1 = [];
+        this.tanks_2 = [];
+        this.attackCount = 1;
+        this.initTanks();
+    }
     
+    Fighting(){
+        if(this.isAllDeath(this.tanks_1)){
+            console.log(`总共攻击了 ${this.attackCount} 次`);
+            console.log("游戏结束，红赢了");
+            this.refreshTanks();
+            this.isOpen = false;
+            return;
+        }
+
+        if(this.isAllDeath(this.tanks_2)){
+            console.log(`总共攻击了 ${this.attackCount} 次`);
+            console.log("游戏结束，蓝方赢了");
+            this.refreshTanks();
+            this.isOpen = false;
+            return;
+        }
+        if(this.attackCount % 2 === 1){
+            for(let index = 0; index < MAX; index++){
+                if(this.tanks_1[this.bruck % MAX].alive){
+                    break;
+                }
+                this.bruck++;
+            }
+            let oo = {
+                npc: this.tanks_1[this.bruck % MAX],
+                enemys: this.tanks_2,
+                team:this.tanks_1
+            }
+            this.fightTree.tick(oo, this.blackboard);
+            this.bruck++;
+        } else {
+            for(let index = 0; index < MAX; index++){
+                if(this.tanks_2[this.red % MAX].alive){
+                    break;
+                }
+                this.red++;
+            }
+            let oo2 = {
+                npc: this.tanks_2[this.red % MAX],
+                enemys: this.tanks_1,
+                team: this.tanks_2
+            }
+            this.fightTree.tick(oo2, this.blackboard);
+            this.red ++;
+        }
+        this.attackCount++;
+    }
+
+    isAllDeath(arr:Array<any>){
+        for(let index = 0; index < arr.length; index++){
+            if(arr[index].alive){
+                return false;
+            }
+        }
+        return true;
+    }
 
 
 
-    // update (dt) {}
+    update (dt) {
+        this.delayTime = this.delayTime + dt;
+        let deltaTime = this.delayTime - this.lastTime;
+        if (deltaTime >= 0.2) {
+            this.ptick(deltaTime);
+            this.lastTime = this.delayTime;
+        }
+
+        if(this.isOpen){
+            this.Fighting();
+        }
+    }
+    ptick(dt) {
+
+        this.ticker++;
+        if (this.ticker % 5 == 0) {
+            this.secTick(1.0);
+        }
+
+    }
+
+    secTick(dt) {
+       
+    }
 }

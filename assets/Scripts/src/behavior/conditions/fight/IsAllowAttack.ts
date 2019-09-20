@@ -2,9 +2,7 @@ import Condition from "../../core/Condition";
 import { BaseNodeData } from "../../interf";
 import { FAILURE, SUCCESS } from "../../constants";
 
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class IsAllowAttack extends Condition{
     constructor () {
         let data:BaseNodeData = {

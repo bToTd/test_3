@@ -3,7 +3,7 @@ import { COMPOSITE, DECORATOR } from '../constants';
 import * as Decorators from '../decorators';
 import * as Composites from '../composites';
 import * as Conditions from '../conditions';
-import * as Actions from '../sbactions';
+import * as Actions from '../actions';
 import Tick from './Tick';
 import { BaseNodeData } from '../interf';
 
@@ -79,9 +79,7 @@ interface behaviorTreeData {
   nodes: any,
   custom_nodes: any
 }
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class BehaviorTree {
   id: string;
   title: string;

@@ -12,9 +12,7 @@ import { BaseNodeData } from '../interf';
  * @class MemSequence
  * @extends Composite
  **/
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class MemSequence extends Composite {
 
   /**

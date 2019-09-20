@@ -3,7 +3,7 @@ import {data} from '../config/newState'
 
 const {ccclass, property} = cc._decorator;
 
-@ccclass
+@ccclass 
 export default class TestStM extends cc.Component implements State {
     private SM_1 = new StateManager();
     public _state:string = data.state["-2"];

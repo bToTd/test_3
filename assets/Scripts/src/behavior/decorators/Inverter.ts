@@ -10,9 +10,7 @@ import { BaseNodeData } from '../interf';
  * @class Inverter
  * @extends Decorator
  **/
-const {ccclass, property} = cc._decorator;
-
-@ccclass
+ 
 export default class Inverter extends Decorator {
 
   /**
